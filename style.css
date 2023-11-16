@@ -15,10 +15,12 @@ h1 {
 	text-align: center;
 	font-weight: 300;
 }
-p {
+h2 {
 	color:black;
 	margin: 0 0 1.5em 0;
+	text-align: center;
 }
+
 ul {
 	color;black;
 }
