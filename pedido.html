@@ -4,7 +4,7 @@
 	<title>Pedido</title>
 	<link rel="stylesheet" href="pedido.css">
 </head>
-<body style="background:#F9FF33;">
+<body style="background:#C1FDFB;">
 	<div>
 	<form name="Mi fromulario" id="Mi formulario">
 		<fieldset style="background: #f6f8ff; border: 2px solid #4238ca; box-shadow: 20px 15px 7px red;">
@@ -41,7 +41,19 @@
 				<label for="insurance">Pedido verificado</label>
 			</div>
 			<br/>
-			<input type="submit" value="Enviar"/>
+			<input class="submit" type="submit" onClick="push()" value="Enviar"/>
+			<script>
+				function push(){
+					alert("Pedido Enviado");
+				}
+			</script>
+			<input class="button" type="button" onclick="push1()" name="Regresar" value="Regresar"/>	
+			<script>
+				function push1(){
+					alert("Regresara a la pagina principal");
+					window.history.go(-2);
+				}
+			</script>	
 		</fieldset>
 	</form>
 </body>
