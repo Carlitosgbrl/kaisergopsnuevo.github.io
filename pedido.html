@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedido</title>
+	<link rel="stylesheet" href="pedido.css">
+</head>
+<body style="background:#F9FF33;">
+	<div>
+	<form name="Mi fromulario" id="Mi formulario">
+		<fieldset style="background: #f6f8ff; border: 2px solid #4238ca; box-shadow: 20px 15px 7px red;">
+		<legend>Informacion del cliente</legend>
+			<br/>
+			<input type="text" placeholder="Nombre" name="nombre"><br/><br/>
+			<input type="text" placeholder="Apellido Paterno" name="apellidop"><br/><br/>
+			<input type="text" placeholder="Apellido Materno" name="apellidom"><br/><br/>
+			<input type="text" placeholder="Numero" name="numero"><br/><br/>
+			<input type="" placeholder="Direccion" name="direccion"><br/><br/>
+			<br/>
+		<label>Informacion del pedido</label>
+			<br/><br/><br/>
+			<select name="Articulo" id="articulo">
+						<option value="">Seleccione el articulo</option>
+						<option value="Playera">Playera</option>
+						<option value="Sudadera">Sudadera</option>
+						<option value="Gorra">Gorra</option>
+						<option value="Taza">Taza</option>
+					</select><br/><br/>
+			<input type="text" placeholder="Codigo del producto" name="codprod"><br/><br/>
+				<select name="Talla" id="Talla">
+					<option value="">Seleccione una talla</option>
+					<option value="Chica">Chica</option>
+					<option value="Mediana">Mediana</option>
+					<option value="Grande">Grande</option>
+					<option value="Extra grande">Extra Grande</option>
+				</select><br/><br/>
+				<label for="start">Seleccione el dia de entrega</label><br/>
+				<input type="date" id="start"  value="2023-11-16" min="2023-11-17" max="2023-12-31"/>
+				<br/><br/>
+			<div>
+				<input type="checkbox" id="insurance" name="seguro" value="seguro">
+				<label for="insurance">Pedido verificado</label>
+			</div>
+			<br/>
+			<input type="submit" value="Enviar"/>
+		</fieldset>
+	</form>
+</body>
+</html>
